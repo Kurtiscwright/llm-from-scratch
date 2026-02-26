@@ -4,7 +4,9 @@ import re
 
 # Setup file path for data folder.
 base_dir = os.path.dirname(os.path.abspath(__file__))
-file_path = os.path.join(base_dir, os.pardir, 'the-verdict.txt')
+data_dir = os.path.join(base_dir, '../..')
+file_path = os.path.join(data_dir, 'data/', 'the-verdict.txt')
+
 # Will be refenced during initial setup
 verdict_file_path = os.path.abspath(file_path)
 
